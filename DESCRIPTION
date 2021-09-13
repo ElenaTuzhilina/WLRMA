@@ -1,0 +1,35 @@
+Package: WLRMA
+Title: Weighted Low-Rank Matrix Approximation
+Version: 1.1
+Authors@R: 
+    c(person(given = "Elena",
+           family = "Tuzhilina",
+           role = c("aut", "cre"),
+           email = "elenatuz@stanford.edu"), 
+	person(given = "Trevor",
+           family = "Hastie",
+           role = c("aut"),
+           email = "hastie@stanford.edu"))
+Author: Elena Tuzhilina [aut, cre],
+		Trevor Hastie [aut]
+Maintainer: Elena Tuzhilina <elenatuz@stanford.edu>
+Description: 
+	This package performs Weighted Low-Rank Matrix Approximation. 
+	The implementation allows to solve the WLRMA problem as well as its convex relaxation.
+	Two types of the algorithm are avaliable. The first is based on projected gradient descent and requires 
+	to compute some singular value decomposition at each iteration.
+	The second is more suitable for high-dimensional data. It is SVD-free and is based on alternating least squares. 
+	In addition to the baseline algorithm, the packages contains three build-in acceleration techniques: 
+	Nesterov, Anderson and Regularized Anderson acceleration. 
+Imports: 
+	tictoc,
+	npmr
+Suggests: 
+    knitr,
+    rmarkdown, 
+	ggplot2
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
