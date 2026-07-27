@@ -1,7 +1,8 @@
-This package is an R implementation of Weighted Low-Rank Matrix Approximation (WLRMA).
+# WLRMA
 
-Use the following code to download the package:
+**Weighted Low-Rank Matrix Approximation: Acceleration and Applications**
 
-devtools::install_github('https://github.com/ElenaTuzhilina/WLRMA')
+This repository contains the R implementation accompanying the paper
 
-Check R documentation for function descriptions and examples.
+> **Weighted Low-Rank Matrix Approximation: Acceleration and Applications**  
+> Elena Tuzhilina and Trevor Hastie
